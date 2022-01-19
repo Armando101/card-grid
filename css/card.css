@@ -1,0 +1,39 @@
+.card {
+  display: grid;
+  padding: 0.25rem;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+h3 {
+  margin-block: 0.25rem;
+}
+
+.card-image img {
+  inline-size: 100%;
+  border-radius: 8px;
+}
+
+.card-info :nth-child(2) {
+  color: var(--primary);
+}
+
+.card-info :nth-child(3) {
+  color: var(--gray-1);
+  text-decoration: line-through;
+}
+
+.card-button {
+  display: flex;
+}
+
+.card-button button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  flex-grow: 1;
+  cursor: pointer;
+}

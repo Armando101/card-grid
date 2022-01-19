@@ -1,0 +1,34 @@
+.promo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "second first first first"
+    "second third third third"
+    "second third third third";
+  gap: 0.5rem;
+  block-size: 50vh;
+  margin-block-start: 1rem;
+}
+
+.promo-item {
+  border: 1px solid black;
+  counter-increment: item;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.promo-item::before {
+  content: counter(item);
+}
+
+.promo-item:nth-child(1) {
+  grid-area: first;
+}
+
+.promo-item:nth-child(2) {
+  grid-area: second;
+}
+
+.promo-item:nth-child(3) {
+  grid-area: third;
+}

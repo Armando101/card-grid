@@ -1,0 +1,15 @@
+@import "./card.css";
+@import "./card-container.css";
+/* @import "./promo.css"; */
+@import "./promo2.css";
+
+:root {
+  --primary: #fe7a48;
+  --gray-1: #cecece;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--primary);
+  font-family: Arial, Helvetica, sans-serif;
+}

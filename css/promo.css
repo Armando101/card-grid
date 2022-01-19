@@ -1,0 +1,41 @@
+.promo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  block-size: 50vh;
+  margin-block-start: 1rem;
+}
+
+.promo-item {
+  border: 1px solid black;
+  counter-increment: item;
+  background-color: white;
+}
+
+.promo-item::before {
+  content: counter(item);
+}
+
+.promo-item:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.promo-item:nth-child(2) {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+/* .promo-item:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+} */
+
+.promo-item:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
